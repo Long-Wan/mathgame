@@ -8,6 +8,7 @@ if (isset($_POST["submit"])) {
         die();
     }
     else {
+        $_SESSION["valid"] = true;
         header("Location: index.php");
         die();
     }

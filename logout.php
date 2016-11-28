@@ -1,6 +1,7 @@
 <?php session_start() ?>
 <?php
-session_destroy();
+unset($_SESSION["valid"]);
 header("Location: login.php");
 die();
+session_destroy();
 ?>
